@@ -134,7 +134,7 @@ body {
         filter:grayscale(0.2);
     } 
     .gca_img_box.geoffroy {
-        background-image: linear-gradient(rgba(107,107,107,0), rgba(107,107,107,0.5)), url("Images/About-us/geoffroy.jpg");
+        background-image: linear-gradient(rgba(107,107,107,0), rgba(107,107,107,0.5)), url("Images/About-us/Geoffroy.jpg");
     }
     .gca_img_box.gael {
         background-image: linear-gradient(rgba(107,107,107,0), rgba(107,107,107,0.5)), url("Images/About-us/oim.jpg");
