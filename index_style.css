@@ -8,11 +8,15 @@ body p {
 }
 h1, h2, h3, h4 {
 	font-family:Gilroy, Montserrat;
-	font-weight:700;
+	font-weight:900;
+	text-transform:uppercase;
+}
+button {
+	cursor:pointer;
 }
 .button {
 	padding:10px 25px;
-	background-color:#9D59BA;
+	background-color:#52ae32;
 	border-radius:20px;
 	color:white;
 	text-decoration:none;
@@ -25,8 +29,26 @@ h1, h2, h3, h4 {
 }
 .button:hover {
 	background-color:transparent;
-	border:1px solid #9D59BA;
-	color:#9D59BA;
+	border:1px solid #52ae32;
+	color:#52ae32;
+}
+.button-white {
+	padding:10px 25px;
+	background-color:white;
+	border-radius:20px;
+	color:#52ae32;
+	text-decoration:none;
+	text-align:center;
+	transition:all 0.2s ease-in-out;
+	border:1px solid transparent;
+	font-family:Gilroy, Montserrat;
+	font-weight:lighter;
+	font-size:15px;
+}
+.button-white:hover {
+	background-color:transparent;
+	border:1px solid white;
+	color:white;
 }
 
 /* BANNER SECTION */
@@ -67,6 +89,13 @@ h1, h2, h3, h4 {
 	display: flex;
     justify-content: center;
     align-items: center;
+    background-color:#52ae32;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.heading-with-background h2 {
+	color:white;
 }
 section.align-left, section.align-right {
 	height: 450px;
@@ -92,7 +121,7 @@ section.align-left, section.align-right {
 	background-repeat:no-repeat;
 }
 .game-name-picture.super-mario-bros {
-	background-image:url(images/jeux/Super_Mario_Bros.png);
+	background-image:url(https://raw.githubusercontent.com/WildCodeSchool/lyon-0320-golden-retro/dev/Images/Jeux/Super_Mario_Bros.png);
 	background-position:left;
 	background-size:contain;
 }
@@ -105,7 +134,7 @@ span.tiret {
 	margin:0 10px;
 }
 span.release-date {
-	color:#9D59BA;
+	color:#52ae32;
 }
 .game-category span.nintendo {
 	color:#E4000F;
@@ -114,44 +143,44 @@ span.release-date {
 	margin-bottom:30px;
 }
 .align-left.super-mario-bg {
-	background-image:linear-gradient(to right, black, rgba(0,0,0,0)), url(images/jeux/supermariobros.jpg);
-	background-position:right;
-	background-size:55%;
-}
-.align-right {
-
+	background-image:linear-gradient(to right, black, rgba(0,0,0,0)), url(https://raw.githubusercontent.com/WildCodeSchool/lyon-0320-golden-retro/dev/Images/Jeux/supermariobros.jpg);
+	background-position:bottom right;
+	background-size:100%;
+	transition:all 0.2s ease-in-out;
 }
 .align-right.street-fighter-bg {
-	background-image: linear-gradient(to right, rgba(0,0,0,0), black), url(images/jeux/street-fighter.jpg);
+	background-image: linear-gradient(to right, rgba(0,0,0,0), black), url(Images/Jeux/street-fighter.jpg);
     background-position: left;
-    background-size: 55%;
+    background-size: 100%;
+	transition:all 0.2s ease-in-out;
 }
 .align-right .game-content-container {
 	position:absolute;
 	right:50px;
 }
 .game-name-picture.street-fighter {
-	background-image:url(images/jeux/Street_Fighter_old_logo.png);
+	background-image:url(Images/Jeux/Street_Fighter_old_logo.png);
 	background-position:left;
 	background-size:80%;
 }
 .align-left.sonic-bg {
-	background-image:linear-gradient(to right, black, rgba(0,0,0,0)), url(images/jeux/sonic-bg.jpg);
+	background-image:linear-gradient(to right, black, rgba(0,0,0,0)), url(Images/Jeux/sonic-bg.jpg);
 	background-position:right;
-	background-size:55%;
+	background-size:100%;
+	transition:all 0.2s ease-in-out;
 }
 .game-name-picture.sonic {
-	background-image:url(images/jeux/sonic-logo.png);
+	background-image:url(Images/Jeux/sonic-logo.png);
 	background-position:left;
 	background-size:contain;
 }
 .see-all-games-container {
 	height:100px;
 	width:100%;
-	background-color:black;
+	background-color:#52ae32;
 	position:relative;
 }
-.see-all-games-container .button {
+.see-all-games-container .button-white {
 	position:absolute;
 	left:50%;
 	top:50%;
@@ -159,10 +188,6 @@ span.release-date {
 }
 
 /* PLATFORMS */
-.platforms-homepage {
-	margin-top:-20px;
-	padding:50px 0;
-}
 .platforms-homepage h2 {
 	text-align:center;
 }
@@ -175,6 +200,7 @@ span.release-date {
 	max-width:900px;
 	min-width:300px;
 	margin:0 auto;
+	margin-top:50px;
 }
 .products-container-homepage a {
 	width:50%;
@@ -207,41 +233,45 @@ span.release-date {
     left: 50px;
     top: 0;
     padding: 10px;
-    background-color: white;
+    background-color: #52ae32;
     box-shadow: 0px 2px 5px grey;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     font-family: Gilroy,Montserrat;
     font-size: 12px;
-    color:#9D59BA;
+    color:white;
+}
+.first-form-element {
+	margin-top:50px!important;
 }
 .platform-container.sega-megadrive {
-	background-image:linear-gradient(rgba(107, 107, 107, 0.5), rgba(107, 107, 107, 0.5)), url(images/platforms/mega-drive.png);
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(Images/Platforms/mega-drive.png);
 	background-size:cover;
 	background-repeat:no-repeat;
 }
 .platform-container.nes-classic {
-	background-image:linear-gradient(rgba(107, 107, 107, 0.5), rgba(107, 107, 107, 0.5)), url(images/platforms/nes-classic.jpg);
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(Images/Platforms/nes-classic.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
 }
 .platform-container.dreamcast {
-	background-image:linear-gradient(rgba(107, 107, 107, 0.5), rgba(107, 107, 107, 0.5)), url(images/platforms/dreamcast.jpg);
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(Images/Platforms/dreamcast.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
 }
 .platform-container.nintendo-64 {
-	background-image:linear-gradient(rgba(107, 107, 107, 0.5), rgba(107, 107, 107, 0.5)), url(images/platforms/nintendo-64.png);
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(Images/Platforms/nintendo-64.png);
 	background-size:cover;
 	background-repeat:no-repeat;
 }
-.platform-container.playstation-classic {
-	background-image:linear-gradient(rgba(107, 107, 107, 0.5), rgba(107, 107, 107, 0.5)), url(images/platforms/playstation.jpg);
-	background-size:cover;
+.platform-container.arcade {
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(Images/Platforms/arcade.jpg);
+	background-size:contain;
 	background-repeat:no-repeat;
+	background-position:center;
 }
 .platform-container.super-nintendo {
-	background-image:linear-gradient(rgba(107, 107, 107, 0.5), rgba(107, 107, 107, 0.5)), url(images/platforms/super-nintendo.png);
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(Images/Platforms/super-nintendo.png);
 	background-size:cover;
 	background-repeat:no-repeat;
 }
@@ -256,8 +286,8 @@ span.release-date {
 /* ABOUT US */
 .about-us-homepage {
 	height:500px;
-	background-image:linear-gradient(to bottom, black, rgba(0,0,0,0)), url(images/autres/about-us-section.jpg);
-	margin-top:100px;
+	background-image:linear-gradient(to bottom, black, rgba(0,0,0,0)), url(Images/Autres/about-us-section.jpg);
+	margin-top:150px;
 	display: flex;
     justify-content: center;
     align-items:center;
@@ -279,17 +309,17 @@ span.release-date {
     width: 100%;
     background-color:#efefef;
 }
-.contact-homepage input, .contact-homepage textarea {
+.contact-homepage input, .contact-homepage textarea, .form input, .form textarea {
 	width: 60%;
-    border: 1px solid #9D59BA;
+    border: 1px solid #52ae32;
     margin: 10px 0;
     height: 30px;
     border-radius:5px;
     padding-left:8px;
     background-color:white;
 }
-.contact-homepage input::placeholder, .contact-homepage textarea::placeholder {
-	color:#9D59BA;
+.contact-homepage input::placeholder, .contact-homepage textarea::placeholder, .form input:placeholder, .form textarea:placeholder {
+	color:#52ae32;
 }
 .contact-homepage textarea {
 	height:200px;
@@ -297,7 +327,7 @@ span.release-date {
 }
 button {
 	padding:10px 25px;
-	background-color:#9D59BA;
+	background-color:#52ae32;
 	border-radius:20px;
 	color:white;
 	text-decoration:none;
@@ -309,19 +339,24 @@ button {
 	font-size:15px;
 	margin:25px 0;
 }
+button:hover {
+	background-color:transparent;
+	border:1px solid #52ae32;
+	color:#52ae32;
+}
 
 /* RESPONSIVE */
 @media all and (max-width:960px) and (orientation:portrait) {
 	.align-left.super-mario-bg {
-		background-image:url(images/jeux/supermariobros.jpg);
+		background-image:url(Images/Jeux/supermariobros.jpg);
 		background-size:cover;
 	}
 	.align-left.sonic-bg {
-		background-image:url(images/jeux/sonic-bg.jpg);
+		background-image:url(Images/Jeux/sonic-bg.jpg);
     	background-size: cover;
 	}
 	.align-right.street-fighter-bg {
-		background-image:url(images/jeux/street-fighter.jpg);
+		background-image:url(Images/Jeux/street-fighter.jpg);
 		background-size:cover;
 	}
 	.align-left .game-content-container {
@@ -351,7 +386,8 @@ button {
    	 	justify-content: center;
     	align-items: center;
     	flex-direction: column;
-    	right:15px;
+        left: 50%;
+    	transform: translateX(-50%);
 	}
 	.game-content-container {
 		position:relative;

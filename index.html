@@ -4,18 +4,64 @@
 	<title>Retro Invader</title>
 	<meta lang="en">
 	<meta name="title" content="Retro Invaders">
+	<meta charset="UTF-8">
 	<meta name="description" content="Retro Invaders helps you to find your favorite retro games">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="index_style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Roboto:300,400,700,900&display=swap" rel="stylesheet">
-
-
+	<link rel="stylesheet" href="header_style.css" />
+	<link rel="stylesheet" type="text/css" href="footer_style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+	<link rel='stylesheet' id='thb-self-hosted-1-css' href="gilroy/gilroy.css">
 </head>
+
 <body>
 
+	<div id="nav-mobile-container" class="nav-mobile-full no-content">
+            <div class="close-menu-mobile no-content">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="mobile-nav">
+                    <ul>
+                        <a href="plateformes.html"><li>Platforms</li></a>
+                        <a href="about_us.html"><li>About Us</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+            </nav>
+
+        </div>
+
 	<header>
-	</header>
+        <section class="logo">
+            <a href="index.html">
+                <img class ="logo_smartphone" alt="logo_retro_invaders_smartphone" src="Images/Autres/blog-loco-green.png" height="110" width="auto">
+                <div class="logo-header"></div>
+            </a>
+
+        </section>
+
+        <section class="menu_burger_container">
+            <article id="burger-menu-click" class="menu_burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </article>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="plateformes.html">Platforms</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
 	<main>
 		<section class="banner-homepage">
@@ -44,7 +90,7 @@
 						<span class="release-date">1993</span>
 					</div>
 					<p>Nintendo created platform games and got it at its best with Super Mario Bros. 2. Experience now one of the best platformers ever created!</p>
-					<a href="#" class="button">MORE INFO</a>
+					<a href="super-mario-bros.html" class="button">MORE INFO</a>
 				</div>
 			</section>
 
@@ -57,7 +103,7 @@
 						<span class="release-date">1992</span>
 					</div>
 					<p>Ryu, CHun-Li, M. Bison... choose your favorite street fighter and battleyour friend!</p>
-					<a href="#" class="button">MORE INFO</a>
+					<a href="street-fighter-2.html" class="button">MORE INFO</a>
 				</div>
 			</section>
 
@@ -72,13 +118,9 @@
 						<span class="release-date">1992</span>
 					</div>
 					<p>With Sonic the Hedgehog, Sega became a real concurrent to Nintendo’s Mario.</p>
-					<a href="#" class="button">MORE INFO</a>
+					<a href="sonic-the-hedgehog-2.html" class="button">MORE INFO</a>
 				</div>
 			</section>
-
-			<div class="see-all-games-container">
-				<a href="#" class="button">SEE ALL</a>
-			</div>
 
 		</section>
 
@@ -90,50 +132,50 @@
 
 			<div class="products-container-homepage">
 
-				<a href="#">
+				<a href="genesis.html">
 					<div class="platform-container sega-megadrive">
-						<span class="number-of-games">5 JEUX</span>
-						<h3>Sega Megadrive</h3>
+						<span class="number-of-games">2 JEUX</span>
+						<h3>Sega Genesis</h3>
 					</div>
 				</a>
 
-				<a href="#">	
+				<a href="nes-classic.html">	
 					<div class="platform-container nes-classic">
-						<span class="number-of-games">7 JEUX</span>
+						<span class="number-of-games">1 JEUX</span>
 						<h3>NES Classic</h3>
 					</div>
 				</a>
 
-				<a href="#">
+				<a href="dreamcast.html">
 					<div class="platform-container dreamcast">
-						<span class="number-of-games">4 JEUX</span>
+						<span class="number-of-games">1 JEUX</span>
 						<h3>Dreamcast</h3>
 					</div>
 				</a>
 
-				<a href="#">
+				<a href="nintendo-64.html">
 					<div class="platform-container nintendo-64">
-						<span class="number-of-games">10 JEUX</span>
+						<span class="number-of-games">3 JEUX</span>
 						<h3>Nintendo 64</h3>
 					</div>
 				</a>
 
-				<a href="#">
-					<div class="platform-container playstation-classic">
-						<span class="number-of-games">8 JEUX</span>
-						<h3>Playstation Classic</h3>
+				<a href="arcade.html">
+					<div class="platform-container arcade">
+						<span class="number-of-games">2 JEUX</span>
+						<h3>Arcade</h3>
 					</div>
 				</a>
 
-				<a href="#">
+				<a href="super-nintendo.html">
 					<div class="platform-container super-nintendo">
-						<span class="number-of-games">11 JEUX</span>
+						<span class="number-of-games">4 JEUX</span>
 						<h3>Super Nintendo</h3>
 					</div>
 				</a>
 			</div>
 
-				<a href="#" class="button">SEE ALL</a>
+				<a href="plateformes.html" class="button">SEE ALL</a>
 
 		</section>
 
@@ -142,16 +184,18 @@
 			<div class="about-us-homepage-content-container">
 				<h2>Let's meet</h2>
 				<p>Video game is our passion since we were kids and we love to share it.</p>
-				<a href="#" class="button pink-button">KNOW MORE</a>
+				<a href="about_us.html" class="button pink-button">KNOW MORE</a>
 			</div>
 
 		</section>
 
 		<section class="contact-homepage">
 
-			<h2>Any questions?</h2>
+			<div class="heading-with-background">
+				<h2>Any questions?</h2>
+			</div>
 
-			<input type="text" placeholder="Name">
+			<input class="first-form-element" type="text" placeholder="Name">
 			<input type="text" placeholder="Email Address">
 			<input type="dropdown" placeholder="How can we help?">
 			<textarea placeholder="Anything else?"></textarea>
@@ -161,10 +205,91 @@
 		</section>
 
 		<footer>
-		</footer>
+        <section class="items">
+            <article class="hidden">
+                <a href="plateformes.html">
+                    <div>Platforms</div>
+                </a>
+            </article>
+            <article class="hidden">
+                <a href="produits.html">
+                    <div>Products</div>
+                </a>
+            </article>
+            <article class="hidden">
+                <a href="about_us.html">
+                    <div>About Us</div>
+                </a>
+            </article>
+            <article class="hidden">
+                <a href="index.html">
+                    <div class="logo_retro_invaders">
+                        <img class="logo_desktop" alt="logo_retro_invaders_desktop" src="Images/Autres/blog-loco-green.png" height="150" width="auto">
+                    </div>
+                </a>
+            </article>
+            <article class="hidden">
+                <a href="contact.html">
+                    <div>Contact</div>
+                </a>
+            </article>
+            <article>
+            	<a href="#">
+                <div>FAQ</div>
+            </a>
+            </article>
 
+            <article>
+            	<a href="#">
+                <div>Legal Mentions</div>
+            </a>
+            </article>
+        </section>
 
-	</main>
+        <section class="logo-rs-footer-container">
+            <article>
+                <a href="https://www.instagram.com/?hl=fr">
+                   <img class="logo_instagram" alt="logo_instagram" src="Images/Autres/instagram-green.png" height="40" width="auto">
+                </a>
+            </article>
+            
+            <article>
+                <a href="https://twitter.com/?lang=fr">
+                    <img alt="logo_twitter" src="Images/Autres/twitter-green.png" height="40" width="auto">
+                </a>
+            </article>
+
+            <article>
+                <a href="https://fr-fr.facebook.com/">
+                    <img alt="logo_facebook" src="Images/Autres/facebook-green.png" height="40" width="auto">
+                </a>
+            </article>
+
+            <article>
+                <a href="https://www.pinterest.fr/">
+                    <img alt="logo_pinterest" src="Images/Autres/pinterest-green.png" height="40" width="auto">
+                </a>
+            </article>
+
+        </section>
+    </footer>
+</main>
+        
+        <script type="text/javascript">
+        jQuery(function(){
+        	var div = jQuery("#burger-menu-click"), div = jQuery("#nav-mobile-container"), div = jQuery(".close-menu-mobile");
+        	jQuery("#burger-menu-click").click(function(){
+        		jQuery("#burger-menu-click").toggleClass ("no-content");
+        		jQuery("#nav-mobile-container").toggleClass ("no-content");
+        		jQuery(".close-menu-mobile").toggleClass ("no-content");
+        	});    	
+        	jQuery(".close-menu-mobile").click(function(){
+        		jQuery("#burger-menu-click").toggleClass ("no-content");
+        		jQuery("#nav-mobile-container").toggleClass ("no-content");
+        		jQuery(".close-menu-mobile").toggleClass ("no-content");
+        	});   
+    	});
+        </script>
 
 </body>
 </html>

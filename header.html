@@ -4,34 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Header</title>
     <link rel="stylesheet" type="text/css" href="header_style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
     <header>
+        <div id="nav-mobile-container" class="nav-mobile-full no-content">
+            <div class="close-menu-mobile">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                    <ul>
+                        <li><a href="plateformes.html">Platforms</a></li>
+                        <li><a href="produits.html">Products</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+        </div>
         <section class="logo">
             <a href="index.html">
-                <img class ="logo_smartphone" alt="logo_retro_invaders_smartphone" src="Images/Autres/retro-bloc-blue.png" height="125" width="auto">
-                <img class="logo_desktop" alt="logo_retro_invaders_desktop" src="Images/Autres/retro-invaders-pink.png" height="350" width="auto">
+                <img class ="logo_smartphone" alt="logo_retro_invaders_smartphone" src="Images/Autres/retro-invaders-pink-cube.png" height="110" width="auto">
+                <div class="logo-header"></div>
             </a>
 
         </section>
 
         <section class="menu_burger_container">
-            <article class="menu_burger">
-                <div class="bar">
-
-                </div>
-
-                <div class="bar">
-
-                </div>
-
-                <div class="bar">
-
-                </div>
+            <article id="burger-menu-click" class="menu_burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
 
             </article>
         </section>
@@ -39,12 +48,12 @@
         <section class="menu_sidebar">
 
             <article id="menu_smartphone">
-                <nav>
+                <nav class="mobile-nav">
                     <ul>
-                        <li><a href="plateformes.html">Platforms</a></li>
-                        <li><a href="produits.html">Products</a></li>
-                        <li><a href="about_us.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <a href="plateformes.html"><li class="no-content">Platforms</li></a>
+                        <a href="produits.html"><li>Products</li></a>
+                        <a href="about_us.html"><li>About Us</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
                     </ul>
                 </nav>
 

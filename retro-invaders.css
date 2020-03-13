@@ -1,0 +1,37 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3879689, 2020-03-12T21:59:17-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Gilroy-Light by Radomir Tinkov
+ * URL: https://www.myfonts.com/fonts/radomir-tinkov/gilroy/light/
+ * 
+ * Webfont: Gilroy-ExtraBold by Radomir Tinkov
+ * URL: https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2016 by Radomir Tinkov. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b3309");
+  
+@font-face {
+  src: url('webFonts/Gilroy-ExtraBold/font.eot');
+  font-family: 'Gilroy-ExtraBold';
+  src: url('webFonts/Gilroy-ExtraBold/font.woff2') format('woff2'), url('webFonts/Gilroy-ExtraBold/font.woff') format('woff'), url('webFonts/Gilroy-ExtraBold/font.eot?#iefix') format('embedded-opentype'), url('webFonts/Gilroy-ExtraBold/font.ttf') format('truetype');
+}
+@font-face {
+  src: url('webFonts/Gilroy-Light/font.eot');
+  font-family: 'Gilroy-Light';
+  src: url('webFonts/Gilroy-Light/font.woff2') format('woff2'), url('webFonts/Gilroy-Light/font.woff') format('woff'), url('webFonts/Gilroy-Light/font.eot?#iefix') format('embedded-opentype'), url('webFonts/Gilroy-Light/font.ttf') format('truetype');
+}
+

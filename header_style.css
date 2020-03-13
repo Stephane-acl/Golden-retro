@@ -1,32 +1,65 @@
-body {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 header {
     height: 150px;
-    background-color: #f7f7f7;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
+    width:100%;
+    position:absolute;
+    z-index:99999;
+}
+.menu_burger.no-content {
+    display:none;
+}
+.nav-mobile-full.no-content, .close-menu-mobile.no-content, .no-content {
+    display:block!important;
+    opacity:0;
+    z-index:-99999;
+    transition:all 0.2s ease-in-out;
+}
+.nav-mobile-full {
+    opacity:1;
+    z-index:999999999;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    transition:all 0.2s ease-in-out;
+    background-color:#272727;
 }
 
+
 .logo {
-    width: 25%;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left:25px;
+    margin-top:-10px;
 }
 
 .logo_desktop {
     display: none;
 }
-
+.nav-mobile-full .close-menu-mobile {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 14px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .menu_burger_container {
     width: 25%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top:-15px;
 }
 
 .menu_burger {
@@ -40,11 +73,27 @@ header {
     cursor: pointer;
 }
 
-.bar {
-    width: 80px;
-    height: 8px;
-    background-color: #15062f;
-    margin-top: 12px;
+.menu_burger .bar {
+    width: 50px;
+    height: 4px;
+    background-color: #52ae32;
+    margin-top: 10px;
+    border-radius:10px;
+}
+.close-menu-mobile .bar {
+    width:50px;
+    height:4px;
+    background-color:#52ae32;
+    border-radius:10px;
+}
+.close-menu-mobile span:nth-child(1) {
+    transform:rotate(45deg);
+    margin-top:35px;
+}
+.close-menu-mobile span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -65px;
+    float: left;
 }
 
 .menu_sidebar {
@@ -64,7 +113,39 @@ header {
     height: 80%;
     display: flex;
 }
-
+.mobile-nav {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.mobile-nav ul {
+    list-style-type: none;
+    margin-left: 0px;
+    text-align: center;
+    padding: 0px;
+}
+.mobile-nav ul a li {
+    display:block;
+    padding:30px;
+    opacity:1;
+    transition:all 0.3s ease-in-out;
+    color:#52ae32
+}
+.mobile-nav ul a {
+    color:white;
+    text-decoration:none;
+    margin-bottom:20px;
+    font-size:28px;
+    font-family:Gilroy,Montserrat;
+}
+.nav-mobile-full.no-content .mobile-nav ul a li {
+    opacity:0;
+    padding:0;
+}
 #menu_smartphone nav {
     width: 100%;
     display: flex;
@@ -88,6 +169,16 @@ header {
     text-decoration: none;
     color: #f7f7f7;
 }
+#button-scroll-top {
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    background-color:;
+    color:white;
+    display:flex;
+    align-content:center;
+    justify-content:center;
+}
 
 nav {
     display: none;
@@ -98,19 +189,26 @@ nav {
     body {
         width: 100%;
     }
-
     header {
-        height: 350px;
-        background-color: transparent;
+        padding-top:0px;
     }
-
+    .logo-header {
+        background-image: url(https://raw.githubusercontent.com/WildCodeSchool/lyon-0320-golden-retro/dev/Images/Autres/retro-invaders-green.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        width: 250px;
+        bottom: 28px;
+        position: absolute;
+        left: 20px;
+    }
     .logo_smartphone {
         display: none;
     }
 
     .logo_desktop {
         display: block;
-        margin-left: 96px;
     }
 
     .menu_burger_container {
@@ -138,7 +236,7 @@ nav {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         text-decoration: none;
-        color: #9D59BA;
+        color: #52ae32;
         margin-right: 32px;
         cursor: pointer;
     }
