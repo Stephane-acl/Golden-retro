@@ -1,9 +1,9 @@
-<?php
+
 
 <footer>
         <section class="items">
             <article class="hidden">
-                <a href="plateformes.html">
+                <a href="plateformes.php">
                     <div>Platforms</div>
                 </a>
             </article>
@@ -13,19 +13,19 @@
                 </a>
             </article>
             <article class="hidden">
-                <a href="about_us.html">
+                <a href="about_us.php">
                     <div>About Us</div>
                 </a>
             </article>
             <article class="hidden">
-                <a href="index.html">
+                <a href="index.php">
                     <div class="logo_retro_invaders">
                         <img class="logo_desktop" alt="logo_retro_invaders_desktop" src="Images/Autres/blog-loco-green.png" height="150" width="auto">
                     </div>
                 </a>
             </article>
             <article class="hidden">
-                <a href="contact.html">
+                <a href="contact.php">
                     <div>Contact</div>
                 </a>
             </article>
@@ -69,3 +69,25 @@
 
         </section>
     </footer>
+
+
+</main>
+
+<script type="text/javascript">
+    jQuery(function(){
+        var div = jQuery("#burger-menu-click"), div = jQuery("#nav-mobile-container"), div = jQuery(".close-menu-mobile");
+        jQuery("#burger-menu-click").click(function(){
+            jQuery("#burger-menu-click").toggleClass ("no-content");
+            jQuery("#nav-mobile-container").toggleClass ("no-content");
+            jQuery(".close-menu-mobile").toggleClass ("no-content");
+        });
+        jQuery(".close-menu-mobile").click(function(){
+            jQuery("#burger-menu-click").toggleClass ("no-content");
+            jQuery("#nav-mobile-container").toggleClass ("no-content");
+            jQuery(".close-menu-mobile").toggleClass ("no-content");
+        });
+    });
+</script>
+
+</body>
+</html>
