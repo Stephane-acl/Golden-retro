@@ -135,12 +135,23 @@
 				<h2>Any questions?</h2>
 			</div>
 
-			<input class="first-form-element" type="text" placeholder="Name">
-			<input type="text" placeholder="Email Address">
-			<input type="dropdown" placeholder="How can we help?">
-			<textarea placeholder="Anything else?"></textarea>
+            <form method="post" action="traitement.php">
+
+            <label for = "name"></label>
+			<input class="first-form-element" type="text" placeholder="Name" id="name" />
+
+            <label for = "email"></label>
+			<input type="text" placeholder="Email Address" id="email" />
+
+            <label for = "help"></label>
+			<input type="dropdown" placeholder="How can we help?" id="help" />
+
+            <label for = "text"></label>
+			<textarea name="text" placeholder="Anything else?" id="text" ></textarea>
 
 			<button type="submit">SUBMIT</button>
+
+            </form>
 
 		</section>
 

@@ -301,7 +301,7 @@ span.release-date {
 }
 
 /* CONTACT */
-.contact-homepage {
+form {
 	display: flex;
     flex-direction: column;
     justify-content: center;

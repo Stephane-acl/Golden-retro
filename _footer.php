@@ -63,7 +63,7 @@
 
             <article>
                 <a href="https://www.pinterest.fr/">
-                    <img alt="logo_pinterest" src="Images/Autres/pinterest-green.png" height="40" width="auto">
+                    <img alt="logo_pinterest" src="Images/Autres/pinterest-green.png" height="40" width="auto" />
                 </a>
             </article>
 

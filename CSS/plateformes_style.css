@@ -241,7 +241,7 @@ nav h2
     box-shadow: 2px 3px 6px lightgrey;
     border-radius: 5px;
     z-index: 9999;
-    top:0;
+    top: 0;
 }
 .nav-platforms h2 {
     margin-top:-9px;
@@ -275,7 +275,7 @@ nav h2
     padding-left:350px;
     box-sizing:border-box;
     justify-content:left;
-    margin-top:-100px;
+    margin-top:-500px;
 }
 
 .bloc
