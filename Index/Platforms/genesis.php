@@ -20,12 +20,22 @@
 
                 <div class="nav-platforms-links-container">
 
-                    <h2><a href="genesis.html">Genesis</a></h2>
-                    <h2><a href="nes-classic.php">NES Classic</a></h2>
-                    <h2><a href="dreamcast.php">Dreamcast</a></h2>
-                    <h2><a href="nintendo-64.php">Nintendo 64</a></h2>
-                    <h2><a href="arcade.php">Arcade</a></h2>
-                    <h2><a href="super-nintendo.php">Super Nintendo</a></h2>
+                    <?php
+
+                    $platforms = [
+
+                    "genesis.php" => "Genesis",
+                    "nes-classic.php" => "NES Classic",
+                    "dreamcast.php" => "Dreamcast",
+                    "nintendo-64.php" => "Nintendo 64",
+                    "arcade.php" => "Arcade",
+                    "super-nintendo.php" => "Super Nintendo"
+                    ];
+
+                    foreach($platforms as $platform => $item) {
+                        echo "<h2><a href= $platform>$item</a></h2>";
+                    }
+                    ?>
                 </div>
 
             </nav>
@@ -33,11 +43,22 @@
             </section>
 
                 <div class="bloc-container">
-                        <div class="bloc sonic-the-hedgehog-2-container"><span>Genesis</span><h3>Sonic The Hedgehog 2</h3><a href="../Products/sonic-the-hedgehog-2.php" class="button button-on-hover">See More</a></div>
-                        <div class="bloc altered-beast-container"><span>Genesis</span><h3>Altered Beast</h3><a href="../Products/altered-beast.php" class="button button-on-hover">See More</a></div>
+
+                    <?php
+
+                    $cards = [
+
+                         "<div class= \"bloc sonic-the-hedgehog-2-container\">" => ["Genesis","Sonic The Hedgehog 2", "<a href = \"../Products/sonic-the-hedgehog-2.php\" . class = \"button button-on-hover\"> . See More . </a></div>"],
+                         "<div class= \"bloc altered-beast-container\">" => ["Genesis","Altered Beast","<a href = \"../Products/altered-beast.php\" . class = \"button button-on-hover\"> . See More . </a></div>"]
+                         ];
+                            foreach ($cards as $card => $element) {
+                                echo  "$card<span>$element[0]</span><h3>$element[1]</h3>$element[2]";
+                            }
+                    ?>
+
                 </div>
 
-            </div>
+
     </main>
 
         <?php include "../Header and Footer/_footer.php";?>

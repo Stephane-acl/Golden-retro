@@ -53,11 +53,20 @@ include "Header and Footer/_header.php";?>
 				<div class="game-content-container">
 					<div class="game-name-picture sonic"></div>
 					<div class="game-category">
-						<span class="nintendo">SEGA</span>
-						<span class="tiret">-</span>
-						<span class="game-platform">MEGADRIVE</span>
-						<span class="tiret">-</span>
-						<span class="release-date">1992</span>
+
+                        <?php
+                            $sonic = [
+
+						"nintendo" => "SEGA",
+						"tiret" => "-",
+						"game-platform" => "MEGADRIVE",
+						"tiret" => "-",
+						"release-date" => "1992"
+                        ];
+                            foreach($sonic as $item => $info) {
+                                echo "<span class= $item>$info</span>";
+                            }
+						?>
 					</div>
 					<p>With Sonic the Hedgehog, Sega became a real concurrent to Nintendo’s Mario.</p>
 					<a href="Products/sonic-the-hedgehog-2.php" class="button">MORE INFO</a>
@@ -137,7 +146,7 @@ include "Header and Footer/_header.php";?>
 				<h2>Any questions?</h2>
 			</div>
 
-            <form method="post" action="traitement.php">
+            <form method="post" action="#">
 
             <label for = "name"></label>
 			<input class="first-form-element" type="text" placeholder="Name" id="name" />

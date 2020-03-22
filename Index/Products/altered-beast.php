@@ -12,7 +12,7 @@
           <!--game picture-->
           <div class="product-img-container">
             <div class="product-image-cotation-bloc">
-                <img src="Images/games/sega-genesis/altered-beast-genesis.png" class="game-image" alt="nom du jeu">
+                <img src="../Images/games/sega-genesis/altered-beast-genesis.png" class="game-image" alt="nom du jeu">
                 <span class="product-cotation-box">+3%</span>
             </div>  
         </div>
