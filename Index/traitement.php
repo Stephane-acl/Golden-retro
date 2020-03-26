@@ -13,10 +13,12 @@ include "Header and Footer/_header.php";?>
 </section>
 <section>
 
+    <h2>Félicitations !</h2>
+
     <article>
 
-        <p><?php echo ' Merci ' . $_POST['user_name'] . ' nous vous contacterons à cette adresse : ' . $_POST['user_email'].'.<br/>' .
-                      'Nous avons bien pris en compte votre demande ' . $_POST['help'] . ' Et ' . $_POST['text']; ?></p>
+        <p><?php echo ' Merci ' . $_GET['user_name'] . ' nous vous contacterons à cette adresse : ' . $_GET['user_email'].'.<br/>' .
+                      'Nous avons bien pris en compte votre demande ' . $_GET['help'] . ' Et ' . $_GET['text']; ?></p>
     </article>
 
 </section>

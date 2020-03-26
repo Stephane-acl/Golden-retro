@@ -3,6 +3,37 @@
 <?php
 $title = "Index";
 $css = "CSS/index_style.css";
+
+$errors = [];
+$user_name = $user_email = $help = "";
+
+if (!empty($_POST)) {
+
+
+    $user_name = trim($_POST['user_name']);
+    $user_email = trim($_POST['user_email']);
+    $help = trim($_POST['help']);
+
+    if (empty($user_name)) {
+        $errors['user_name'] = "Ce champ est obligatoire";
+    }
+
+    if (filter_var($user_email, FILTER_VALIDATE_EMAIL)== false) {
+        $errors['user_email'] = "Ce champs est obligatoire";
+    }
+
+    if (empty($help)) {
+        $errors['help'] = "Ce champs est obligatoire";
+    }
+
+    if (empty($errors)) {
+
+        header('location: /traitement.php?user_name=' . $_POST['user_name'] . '&user_email=' . $_POST['user_email'] . '&help=' . $_POST['help'] . '&text=' . $_POST['text']);
+    }
+
+
+}
+
 include "Header and Footer/_header.php";?>
 
 	<main>
@@ -146,16 +177,26 @@ include "Header and Footer/_header.php";?>
 				<h2>Any questions?</h2>
 			</div>
 
-            <form action="traitement.php" method="post" >
+
+            <form action="" method="POST" >
 
             <label for = "name"></label>
-			<input class="first-form-element" type="text" placeholder="Name" id="name" name="user_name" />
+			<input class="first-form-element" type="text" placeholder="Name" id="name" name="user_name" value=<?php echo $user_name;?> >
+                <?php if (isset($errors['user_name'])) { ?>
+                <small class="color_errors"><?php echo $errors['user_name'];?></small>
+                <?php } ?>
 
             <label for = "email"></label>
-			<input type="email" placeholder="Email Address" id="email" name="user_email" />
+			<input type="email" placeholder="Email Address" id="email" name="user_email" value= <?php echo $user_email;?> >
+                <?php if (isset($erros['$user_email'])) { ?>
+                <small class = "color_errors"><?php echo $errors['user_email'];?></small>
+                <?php } ?>
 
             <label for = "help"></label>
-			<input type="dropdown" placeholder="How can we help?" id="help" name="help" />
+			<input type="text" placeholder="How can we help?" id="help" name="help" maxlength="100" value= <?php echo $help;?> >
+                <?php if (isset($errors['help'])) { ?>
+                <small class="color_errors"><?php echo $errors['help'];?></small>
+                <?php } ?>
 
             <label for = "text"></label>
 			<textarea name="text" placeholder="Anything else?" id="text" ></textarea>
