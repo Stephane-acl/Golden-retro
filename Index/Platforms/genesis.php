@@ -48,8 +48,8 @@
 
                     $cards = [
 
-                         "<div class= \"bloc sonic-the-hedgehog-2-container\">" => ["Genesis","Sonic The Hedgehog 2", "<a href = \"../Products/sonic-the-hedgehog-2.php\" . class = \"button button-on-hover\"> . See More . </a></div>"],
-                         "<div class= \"bloc altered-beast-container\">" => ["Genesis","Altered Beast","<a href = \"../Products/altered-beast.php\" . class = \"button button-on-hover\"> . See More . </a></div>"]
+                         "<div class= \"bloc sonic-the-hedgehog-2-container\">" => ["Genesis","Sonic The Hedgehog 2", "<a href = \"../Products/sonic-the-hedgehog-2.php\" . class = \"button button-on-hover\">See More</a></div>"],
+                         "<div class= \"bloc altered-beast-container\">" => ["Genesis","Altered Beast","<a href = \"../Products/altered-beast.php\" . class = \"button button-on-hover\">See More</a></div>"]
                          ];
                             foreach ($cards as $card => $element) {
                                 echo  "$card<span>$element[0]</span><h3>$element[1]</h3>$element[2]";

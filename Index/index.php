@@ -146,16 +146,16 @@ include "Header and Footer/_header.php";?>
 				<h2>Any questions?</h2>
 			</div>
 
-            <form method="post" action="#">
+            <form action="traitement.php" method="post" >
 
             <label for = "name"></label>
-			<input class="first-form-element" type="text" placeholder="Name" id="name" />
+			<input class="first-form-element" type="text" placeholder="Name" id="name" name="user_name" />
 
             <label for = "email"></label>
-			<input type="text" placeholder="Email Address" id="email" />
+			<input type="email" placeholder="Email Address" id="email" name="user_email" />
 
             <label for = "help"></label>
-			<input type="dropdown" placeholder="How can we help?" id="help" />
+			<input type="dropdown" placeholder="How can we help?" id="help" name="help" />
 
             <label for = "text"></label>
 			<textarea name="text" placeholder="Anything else?" id="text" ></textarea>

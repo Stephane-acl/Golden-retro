@@ -21,21 +21,23 @@
         <div class="form">
             <h2>Get in Touch !</h2>
 
-            <form action="#" method="post">
+            <form action="form.php" method="post">
 
                 <label for="name"></label>
-                <input type="text" id="name" name="user_name" placeholder="Name">
+                <input type="text" id="name" name="user_name" placeholder="Name" />
 
 
                 <label for="mail"></label>
-                <input type="email" id="mail" name="user_mail" placeholder="Mail">
+                <input type="email" id="mail" name="user_mail" placeholder="Mail" />
 
 
                 <label for="msg"></label>
                 <textarea id="msg" name="user_message" placeholder="Message"></textarea>
 
-            </form>
                 <button type="submit" class="button">Send</button>
+
+            </form>
+
 
         </div>
 

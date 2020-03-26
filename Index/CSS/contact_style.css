@@ -14,7 +14,7 @@ body {
 
 /********HEADER******/
 .header {
-    background-image: url("./images/imageonline-co-darkenimage.jpg");
+    background-image: url("../images/imageonline-co-darkenimage.jpg");
     background-size: cover;
 }
 .header{
@@ -68,7 +68,7 @@ body {
     padding-left:8px;
     background-color:white;
 }
-.form input:placeholder, .form textarea:placeholder {
+.form input::placeholder, .form textarea::placeholder {
     color:#52ae32;
 }
 .form textarea {
@@ -132,6 +132,7 @@ input,textarea{
     font-weight:lighter;
     font-size:15px;
     cursor:pointer;
+    display: flex;
 }
 .button:hover {
     background-color:transparent;
