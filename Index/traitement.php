@@ -7,23 +7,24 @@ include "Header and Footer/_header.php";?>
 <section class="banner-homepage">
 
     <div class="homepage-banner-content-container">
-        <h2>Play your favorite retro games</h2>
-        <p>Retro Invader helps you to get your favorite retro games and to have all the informations about prices evolution.</p>
+        <h2>Thanks for subscribing !</h2>
+        <p>Retro Invader is happy to have you as a new member.</p>
     </div>
 </section>
-<section>
+<div class="heading-with-background">
+    <h2>Congratulations !</h2>
+</div>
 
-    <h2>Félicitations !</h2>
+<section class="img_content_form">
+    <div class="message_content_form">
 
-    <article>
 
-        <p><?php echo ' Merci ' . $_GET['user_name'] . ' nous vous contacterons à cette adresse : ' . $_GET['user_email'].'.<br/>' .
-                      'Nous avons bien pris en compte votre demande ' . $_GET['help'] . ' Et ' . $_GET['text']; ?></p>
-    </article>
-
+        <p><?php echo ' Hello ' . '<strong class="color_message">' . $_GET['user_name'] . '</strong>' . ' we are very happy to count you as member we\'ll contact you at this address : <em class="color_message"> ' . $_GET['user_email'] . '</em><br/>' .
+                'We have got your request ' . $_GET['help'] . ' And your message ' . $_GET['text']; ?><br />
+            If you have any questions don't hesitate to contact us !
+        </p>
+    </div>
 </section>
-
-
 
 
 <?php include "Header and Footer/_footer.php";?>

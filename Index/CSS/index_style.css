@@ -347,6 +347,32 @@ button:hover {
 .color_errors {
 	color: red;
 }
+/* Page de redirection*/
+.img_content_form {
+	background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Images/Traitement_formulaire/wall.jpg);
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.message_content_form p {
+	position:absolute;
+	width:50%;
+	min-width:275px;
+	max-width:500px;
+	text-align:center;
+	background-color:rgba(255,255,255,0.7);
+	border-radius:10px;
+	top:25%;
+	left:50%;
+	transform:translateX(-50%);
+	padding:30px;
+	font-size: 1.3rem;
+}
+.color_message {
+	color: red;
+}
 
 /* RESPONSIVE */
 @media all and (max-width:960px) and (orientation:portrait) {
