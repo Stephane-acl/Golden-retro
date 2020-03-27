@@ -18,7 +18,7 @@ include "../Header and Footer/_header.php";?>
     <h2>Félicitations !</h2>
         <article>
 
-                <p><?php echo ' Merci ' . ' ' . $_POST['user_name'] . 'nous vous avons bien pris en compte votre adresse : ' . $_POST['user_mail'] . ' et nous vous remercions pour votre message : ' . $_POST['user_message'];?></p>
+                <p><?php echo ' Merci ' . ' ' . $_GET['user_name'] . ' ' . 'nous vous avons bien pris en compte votre adresse : ' . $_GET['user_mail'] . ' et nous vous remercions pour votre message : ' . $_GET['user_message'];?></p>
 
         </article>
 </section>

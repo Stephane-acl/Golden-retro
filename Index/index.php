@@ -174,11 +174,11 @@ include "Header and Footer/_header.php";?>
 		<section class="contact-homepage">
 
 			<div class="heading-with-background">
-				<h2>Any questions?</h2>
+				<h2 id="mon_formulaire">Any questions?</h2>
 			</div>
 
 
-            <form action="" method="POST" >
+            <form action="" method="POST">
 
             <label for = "name"></label>
 			<input class="first-form-element" type="text" placeholder="Name" id="name" name="user_name" value=<?php echo $user_name;?> >

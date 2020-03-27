@@ -99,6 +99,9 @@ body {
     color:#52ae32;
     font-size:18px;
 }
+.color_errors_contact {
+    color: red;
+}
 
 /****FORM****/
 
