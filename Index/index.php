@@ -5,30 +5,31 @@ $title = "Index";
 $css = "CSS/index_style.css";
 
 $errors = [];
-$user_name = $user_email = $help = "";
+$user_firstName = $user_lastName = $user_email = "";
 
 if (!empty($_POST)) {
 
 
-    $user_name = trim($_POST['user_name']);
+    $user_firstName = trim($_POST['user_firstName']);
+    $user_lastName = trim($_POST['user_lastName']);
     $user_email = trim($_POST['user_email']);
-    $help = trim($_POST['help']);
 
-    if (empty($user_name)) {
-        $errors['user_name'] = "Ce champ est obligatoire";
+    if (empty($user_firstName)) {
+        $errors['user_firstName'] = "Ce champ est obligatoire";
+    }
+
+    if (empty($user_lastName)) {
+        $errors['user_lastName'] = "Ce champs est obligatoire";
     }
 
     if (filter_var($user_email, FILTER_VALIDATE_EMAIL)== false) {
         $errors['user_email'] = "Ce champs est obligatoire";
     }
 
-    if (empty($help)) {
-        $errors['help'] = "Ce champs est obligatoire";
-    }
 
     if (empty($errors)) {
 
-        header('location: /traitement.php?user_name=' . $_POST['user_name'] . '&user_email=' . $_POST['user_email'] . '&help=' . $_POST['help'] . '&text=' . $_POST['text']);
+        header('location: /traitement.php?user_firstName=' . $_POST['user_firstName'] . '&user_lastName=' . $_POST['user_lastName'] . '&user_email=' . $_POST['user_email'] . '&text=' . $_POST['text']);
     }
 
 
@@ -174,34 +175,34 @@ include "Header and Footer/_header.php";?>
 		<section class="contact-homepage">
 
 			<div class="heading-with-background">
-				<h2 id="mon_formulaire">Any questions?</h2>
+				<h2 id="mon_formulaire">Subscribe to our Newsletter</h2>
 			</div>
 
 
             <form action="" method="POST">
 
-            <label for = "name"></label>
-			<input class="first-form-element" type="text" placeholder="Name" id="name" name="user_name" value=<?php echo $user_name;?> >
-                <?php if (isset($errors['user_name'])) { ?>
-                <small class="color_errors"><?php echo $errors['user_name'];?></small>
+            <label for = "first_name"></label>
+			<input class="first-form-element" type="text" placeholder="First name" id="first_name" name="user_firstName" value=<?php echo $user_firstName;?> >
+                <?php if (isset($errors['user_firstName'])) { ?>
+                <small class="color_errors"><?php echo $errors['user_firstName'];?></small>
+                <?php } ?>
+
+            <label for = "last_name"></label>
+			<input type="text" placeholder="Last name" id="last_name" name="user_lastName" value= <?php echo $user_lastName;?> >
+                <?php if (isset($errors['user_lastName'])) { ?>
+                <small class = "color_errors"><?php echo $errors['user_lastName'];?></small>
                 <?php } ?>
 
             <label for = "email"></label>
-			<input type="email" placeholder="Email Address" id="email" name="user_email" value= <?php echo $user_email;?> >
-                <?php if (isset($erros['$user_email'])) { ?>
-                <small class = "color_errors"><?php echo $errors['user_email'];?></small>
-                <?php } ?>
-
-            <label for = "help"></label>
-			<input type="text" placeholder="How can we help?" id="help" name="help" maxlength="100" value= <?php echo $help;?> >
-                <?php if (isset($errors['help'])) { ?>
-                <small class="color_errors"><?php echo $errors['help'];?></small>
+			<input type="email" placeholder="Email Address" id="email" name="user_email" maxlength="100" value= <?php echo $user_email;?> >
+                <?php if (isset($errors['user_email'])) { ?>
+                <small class="color_errors"><?php echo $errors['user_email'];?></small>
                 <?php } ?>
 
             <label for = "text"></label>
-			<textarea name="text" placeholder="Anything else?" id="text" ></textarea>
+			<textarea name="text" placeholder="You can leave a request here !" id="text" ></textarea>
 
-			<button type="submit">SUBMIT</button>
+                <button type="submit"><a href="#mon_formulaire">SUBMIT</a></button>
 
             </form>
 

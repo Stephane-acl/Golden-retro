@@ -19,8 +19,8 @@ include "Header and Footer/_header.php";?>
     <div class="message_content_form">
 
 
-        <p><?php echo ' Hello ' . '<strong class="color_message">' . $_GET['user_name'] . '</strong>' . ' we are very happy to count you as member we\'ll contact you at this address : <em class="color_message"> ' . $_GET['user_email'] . '</em><br/>' .
-                'We have got your request ' . $_GET['help'] . ' And your message ' . $_GET['text']; ?><br />
+        <p><?php echo ' Hello ' . '<strong class="color_message">' . $_GET['user_firstName'] . ' ' . $_GET['user_lastName'] . '</strong>' . ' we are very happy to count you as member we\'ll contact you at this address : <em class="color_message"> ' . $_GET['user_email'] . '</em><br/>' .
+                'We have got your request : ' . $_GET['text']; ?><br />
             If you have any questions don't hesitate to contact us !
         </p>
     </div>

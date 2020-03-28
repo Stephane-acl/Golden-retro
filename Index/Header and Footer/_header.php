@@ -58,7 +58,6 @@
                 <li><a href="../../Platforms/plateformes.php">Platforms</a></li>
                 <li><a href="../../About%20Us/about_us.php">About Us</a></li>
                 <li><a href="../../Contact/contact.php">Contact</a></li>
-                <li><a href="../index.php#mon_formulaire">Formulaire</a></li>
             </ul>
         </nav>
 
