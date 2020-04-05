@@ -1,0 +1,510 @@
+/* GENERAL */
+body {
+	margin:0px;
+}
+body p {
+	font-family:Roboto;
+	font-weight:300;
+}
+h1, h2, h3, h4 {
+	font-family:Gilroy, Montserrat;
+	font-weight:900;
+	text-transform:uppercase;
+}
+button {
+	cursor:pointer;
+}
+.button {
+	padding:10px 25px;
+	background-color:#52ae32;
+	border-radius:20px;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	transition:all 0.2s ease-in-out;
+	border:1px solid transparent;
+	font-family:Gilroy, Montserrat;
+	font-weight:lighter;
+	font-size:15px;
+}
+.button:hover {
+	background-color:transparent;
+	border:1px solid #52ae32;
+	color:#52ae32;
+}
+.button-white {
+	padding:10px 25px;
+	background-color:white;
+	border-radius:20px;
+	color:#52ae32;
+	text-decoration:none;
+	text-align:center;
+	transition:all 0.2s ease-in-out;
+	border:1px solid transparent;
+	font-family:Gilroy, Montserrat;
+	font-weight:lighter;
+	font-size:15px;
+}
+.button-white:hover {
+	background-color:transparent;
+	border:1px solid white;
+	color:white;
+}
+
+/* BANNER SECTION */
+
+.banner-homepage {
+	width:100%;
+	height:500px;
+	background-image:linear-gradient(to bottom, black, rgba(0,0,0,0)), url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+.homepage-banner-content-container {
+	position:absolute;
+	width:50%;
+	min-width:275px;
+	max-width:500px;
+	text-align:center;
+	background-color:rgba(255,255,255,0.7);
+	border-radius:10px;
+	top:40%;
+	left:50%;
+	transform:translateX(-50%);
+	padding:30px;
+}
+.homepage-banner-content-container h2 {
+	width:100%;
+}
+
+/* PICK A GAME */
+.pick-game-homepage {
+	width:100%;
+}
+.heading-with-background {
+	width:100%;
+	height:100px;
+	text-align:center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#52ae32;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.heading-with-background h2 {
+	color:white;
+}
+section.align-left, section.align-right {
+	height: 450px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display:flex;
+    align-items:center;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.align-left .game-content-container {
+	width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    padding-left:50px;
+}
+.game-name-picture {
+	width:300px;
+	height:200px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.game-name-picture.super-mario-bros {
+	background-image:url(https://raw.githubusercontent.com/WildCodeSchool/lyon-0320-golden-retro/dev/Images/Jeux/Super_Mario_Bros.png);
+	background-position:left;
+	background-size:contain;
+}
+.game-category span {
+	font-family:Gilroy, Montserrat;
+	font-size:11px;
+	text-transform:uppercase;
+}
+span.tiret {
+	margin:0 10px;
+}
+span.release-date {
+	color:#52ae32;
+}
+.game-category span.nintendo {
+	color:#E4000F;
+}
+.game-content-container p {
+	margin-bottom:30px;
+}
+.align-left.super-mario-bg {
+	background-image:linear-gradient(to right, black, rgba(0,0,0,0)), url(https://raw.githubusercontent.com/WildCodeSchool/lyon-0320-golden-retro/dev/Images/Jeux/supermariobros.jpg);
+	background-position:bottom right;
+	background-size:100%;
+	transition:all 0.2s ease-in-out;
+}
+.align-right.street-fighter-bg {
+	background-image: linear-gradient(to right, rgba(0,0,0,0), black), url(../Images/Jeux/street-fighter.jpg);
+    background-position: left;
+    background-size: 100%;
+	transition:all 0.2s ease-in-out;
+}
+.align-right .game-content-container {
+	position:absolute;
+	right:50px;
+}
+.game-name-picture.street-fighter {
+	background-image:url(../Images/Jeux/Street_Fighter_old_logo.png);
+	background-position:left;
+	background-size:80%;
+}
+.align-left.sonic-bg {
+	background-image:linear-gradient(to right, black, rgba(0,0,0,0)), url(../Images/Jeux/sonic-bg.jpg);
+	background-position:right;
+	background-size:100%;
+	transition:all 0.2s ease-in-out;
+}
+.game-name-picture.sonic {
+	background-image:url(../Images/Jeux/sonic-logo.png);
+	background-position:left;
+	background-size:contain;
+}
+.see-all-games-container {
+	height:100px;
+	width:100%;
+	background-color:#52ae32;
+	position:relative;
+}
+.see-all-games-container .button-white {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translateX(-50%) translateY(-50%);
+}
+
+/* PLATFORMS */
+.platforms-homepage h2 {
+	text-align:center;
+}
+.products-container-homepage {
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+	width:60%;
+	max-width:900px;
+	min-width:300px;
+	margin:0 auto;
+	margin-top:50px;
+}
+.products-container-homepage a {
+	width:50%;
+}
+.platform-container {
+	width:92%;
+	min-width:290px;
+	height:200px;
+	border-radius:20px;
+	margin:12px auto;
+	position:relative;
+	box-shadow:2px 3px 6px lightgrey;
+	transition:all 0.2s ease-in-out;
+}
+.platform-container:hover {
+	transform:scale(1.03);
+}
+.platform-container h3 {
+	text-align:center;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translateX(-50%) translateY(-50%);
+	margin:0;
+	color:white;
+	font-size:24px;
+}
+.number-of-games {
+	position: absolute;
+    left: 50px;
+    top: 0;
+    padding: 10px;
+    background-color: #52ae32;
+    box-shadow: 0px 2px 5px grey;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: Gilroy,Montserrat;
+    font-size: 12px;
+    color:white;
+}
+.first-form-element {
+	margin-top:50px!important;
+}
+.platform-container.sega-megadrive {
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(../Images/Platforms/mega-drive.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.platform-container.nes-classic {
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(../Images/Platforms/nes-classic.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.platform-container.dreamcast {
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(../Images/Platforms/dreamcast.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.platform-container.nintendo-64 {
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(../Images/Platforms/nintendo-64.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.platform-container.arcade {
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(../Images/Platforms/arcade.jpg);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.platform-container.super-nintendo {
+	background-image:linear-gradient(rgba(107, 107, 107, 0), rgba(107, 107, 107, 0.5)), url(../Images/Platforms/super-nintendo.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.platforms-homepage .button {
+	margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+}
+
+/* ABOUT US */
+.about-us-homepage {
+	height:500px;
+	background-image:linear-gradient(to bottom, black, rgba(0,0,0,0)), url(../Images/Autres/about-us-section.jpg);
+	margin-top:150px;
+	display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color:white;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.about-us-homepage-content-container p {
+	margin:45px 0;
+}
+
+/* CONTACT */
+form {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:#efefef;
+}
+.contact-homepage input, .contact-homepage textarea, .form input, .form textarea {
+	width: 60%;
+    border: 1px solid #52ae32;
+    margin: 10px 0;
+    height: 30px;
+    border-radius:5px;
+    padding-left:8px;
+    background-color:white;
+}
+.contact-homepage input::placeholder, .contact-homepage textarea::placeholder, .form input::placeholder, .form textarea::placeholder {
+	color:#52ae32;
+}
+.contact-homepage textarea {
+	height:200px;
+	padding-top:5px;
+}
+button {
+	padding:10px 25px;
+	background-color:#52ae32;
+	border-radius:20px;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	transition:all 0.2s ease-in-out;
+	border:1px solid transparent;
+	font-family:Gilroy, Montserrat;
+	font-weight:lighter;
+	font-size:15px;
+	margin:25px 0;
+}
+button:hover {
+	background-color:transparent;
+	border:1px solid #52ae32;
+	color:#52ae32;
+}
+.color_errors {
+	color: red;
+}
+/* Page de redirection Index/public*/
+.img_content_form {
+	background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)), url(../Images/Traitement_formulaire/wall.jpg);
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.message_content_form p {
+	position:absolute;
+	width:50%;
+	min-width:275px;
+	max-width:500px;
+	text-align:center;
+	background-color:rgba(255,255,255,0.7);
+	border-radius:10px;
+	top:25%;
+	left:50%;
+	transform:translateX(-50%);
+	padding:30px;
+	font-size: 1.3rem;
+}
+.color_message {
+	color: red;
+}
+/*Page de modification Index/public*/
+.img_content_edit {
+	background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)), url(../Images/Edit/nintendo.jpg);
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.message_content_edit {
+	position:absolute;
+	width:50%;
+	min-width:275px;
+	max-width:500px;
+	text-align:center;
+	background-color:rgba(255,255,255,0.7);
+	border-radius:10px;
+	top:25%;
+	left:50%;
+	transform:translateX(-50%);
+	padding:30px;
+	font-size: 1.3rem;
+}
+/*ADMIN*/
+.table {
+	border: 2px solid black;
+	border-radius:20px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px grey;
+}
+.table_content th {
+	padding: 15px;
+}
+.table_platform_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+}
+.red_button {
+	color: red;
+}
+.banner-adminpage {
+	width:100%;
+	height:500px;
+	background-image:linear-gradient(to bottom, black, rgba(0,0,0,0)), url(../Admin/images/arcade.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+	background-size: cover;
+
+
+}
+.adminpage-banner-content-container {
+	position:absolute;
+	width:50%;
+	min-width:275px;
+	max-width:500px;
+	text-align:center;
+	background-color:rgba(255,255,255,0.7);
+	border-radius:10px;
+	top:40%;
+	left:50%;
+	transform:translateX(-50%);
+	padding:30px;
+}
+
+/* RESPONSIVE */
+@media all and (max-width:960px) and (orientation:portrait) {
+	.align-left.super-mario-bg {
+		background-image:url(../Images/Jeux/supermariobros.jpg);
+		background-size:cover;
+	}
+	.align-left.sonic-bg {
+		background-image:url(../Images/Jeux/sonic-bg.jpg);
+    	background-size: cover;
+	}
+	.align-right.street-fighter-bg {
+		background-image:url(../Images/Jeux/street-fighter.jpg);
+		background-size:cover;
+	}
+	.align-left .game-content-container {
+		width: 50%;
+    	min-width: 300px;
+    	max-width: 600px;
+    	padding: 15px;
+    	background-color: rgba(0,0,0,0.5);
+    	border-radius: 10px;
+    	margin: 0 auto;
+    	padding-left:15px;
+    	display: flex;
+   	 	justify-content: center;
+    	align-items: center;
+    	flex-direction: column;
+	}
+	.align-right .game-content-container {
+		width: 50%;
+    	min-width: 300px;
+    	max-width: 600px;
+    	padding: 15px;
+    	background-color: rgba(0,0,0,0.5);
+    	border-radius: 10px;
+    	margin: 0 auto;
+    	padding-left:15px;
+    	display: flex;
+   	 	justify-content: center;
+    	align-items: center;
+    	flex-direction: column;
+        left: 50%;
+    	transform: translateX(-50%);
+	}
+	.game-content-container {
+		position:relative;
+	}
+	.game-name-picture.super-mario-bros, .game-name-picture.street-fighter, .game-name-picture.sonic {
+		background-position:center;
+	}
+	.category {
+		font-weight:900;
+	}
+	.products-container-homepage a {
+		width:100%;
+	}
+	.about-us-homepage-content-container p {
+		padding:0 15px;
+	}
+	.contact-homepage input, .contact-homepage textarea {
+		width:calc(100% - 30px);
+	}
+	.contact-homepage input::placeholder, .contact-homepage textarea::placeholder {
+		font-size:12px;
+	}
+}
